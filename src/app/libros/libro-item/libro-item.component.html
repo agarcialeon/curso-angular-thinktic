@@ -1,0 +1,15 @@
+<div class="card p-1 book">
+  <img src="{{libro.imagen}}" class="rounded mr-auto ml-auto mb-1" alt="image">
+  <h6 class="text-center">{{libro.titulo}}<span><br>-Best seller-</span></h6>
+  <div class="d-flex flex-row justify-content-around">
+    <a class="book-action" [routerLink]="['/visor']">
+      <fa-icon [icon]="faEye"></fa-icon>
+    </a>
+    <a class="book-action" [routerLink]="['/biblioteca/detalle', libro.id]">
+      <fa-icon [icon]="faInfo"></fa-icon>
+    </a>
+    <a class="book-action" (click)="favorito(libro)">
+      <fa-icon [icon]="farStar"></fa-icon>
+    </a>
+  </div>
+</div>

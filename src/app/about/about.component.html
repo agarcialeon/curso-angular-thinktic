@@ -1,0 +1,66 @@
+<div class="d-flex flex-column p-2">
+
+  <h1>Detalles sobre la aplicación</h1>
+
+  <div class="d-flex flex-row justify-content-around">
+
+    <div class="col-3 card p-2">
+
+      <h2>Librerias utilizadas</h2>
+
+      <div class="list-group">
+        <a *ngFor="let library of librariesUsed" href="#" class="list-group-item list-group-item-action"
+          aria-current="true">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">{{library.name}}</h5>
+            <small>Link</small>
+          </div>
+          <p class="mb-1">{{library.description}}</p>
+          <small>{{library.version}}</small>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="col-3 card p-2">
+
+      <div class="box-title">
+        <h3 class="pl-2">Otros detalles</h3>
+      </div>
+
+      <div class="m-2">
+
+        <h5>Licencia: {{license}}</h5>
+
+        <h5>Autor: {{author}}</h5>
+
+        <h5>Versión: {{version}}</h5>
+
+      </div>
+
+    </div>
+
+    <div class="col-4 card p-2">
+
+      <h2 class="box-title mb-2">Contacta conmigo</h2>
+
+      <p>Si quieres ponerte en contacto, rellena este formulario y te escribiré cuando pueda.</p>
+
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">No compartiremos tu correo con nadie.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1">Tu mensaje:</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+
+    </div>
+
+  </div>
+
+</div>

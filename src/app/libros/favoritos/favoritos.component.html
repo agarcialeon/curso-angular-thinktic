@@ -1,0 +1,20 @@
+<div class="container-fluid col-12 h-75 libreria d-flex flex-row justify-content-start align-items-start">
+  <div *ngFor="let libro of libros; index as indice"
+    class="col-2 btn p-1 mr-1 ml-1 d-flex flex-column justify-content-center">
+    <a [routerLink]="['detail', libro.id]" class="card p-1">
+      <img src="{{libro.imagen}}" class="rounded mr-auto ml-auto mb-1" alt="{{libro.titulo}}">
+      <h6 class="text-center">{{libro.titulo}}<span *ngIf="indice == 0"><br>-Best seller-</span></h6>
+      <div class="d-flex flex-row justify-content-end">
+        <a [routerLink]="['/biblioteca']">
+          <fa-icon [icon]="faEye"></fa-icon>
+        </a>
+        <a [routerLink]="['detail', libro.id]">
+          <fa-icon [icon]="faInfo"></fa-icon>
+        </a>
+        <a (click)="favorite(libro)">
+          <fa-icon [icon]="farStar"></fa-icon>
+        </a>
+      </div>
+    </a>
+  </div>
+</div>

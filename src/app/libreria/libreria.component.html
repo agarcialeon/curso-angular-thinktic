@@ -1,0 +1,6 @@
+<div class="container-fluid col-12 h-100 libreria d-flex flex-row flex-wrap justify-content-start align-items-start">
+  <div *ngFor="let libro of libros; index as indice"
+    class="col-2 btn p-1 mr-1 ml-1 d-flex flex-column justify-content-center">
+    <app-libro-item [libro]="libro" (favorited)="favorito(libro)"></app-libro-item>
+  </div>
+</div>

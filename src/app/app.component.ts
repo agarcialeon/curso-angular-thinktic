@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+
+
   title = 'curso-angular';
+  condicion: boolean = false;
+  so: string;
+  color: string = 'yellow';
+
+  constructor(){
+
+  }
 }

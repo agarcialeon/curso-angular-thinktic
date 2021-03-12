@@ -1,0 +1,31 @@
+.book {
+  cursor: auto;
+}
+
+/* .book:hover {
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  transform: scale3d(0.9, 0.9, 0.9);
+  transform-style: preserve-3d;
+} */
+
+a {
+  text-decoration: none;
+}
+
+h6 {
+  color: #314e52;
+}
+
+a.book-action {
+  color: #314e52;
+}
+
+a.book-action:hover {
+  color: #f2a154;
+}
+
+.book img{
+ width: 200px;
+ height: 300px;
+}

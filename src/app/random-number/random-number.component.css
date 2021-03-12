@@ -1,0 +1,18 @@
+.tarjeta{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: burlywood;
+  width: 15%;
+  font-family: Helvetica;
+  padding: 2%;
+  border-radius: 8px;
+}
+
+.titulo{
+  color: white;
+}
+
+.valor{
+  font-size: 20px;
+}
